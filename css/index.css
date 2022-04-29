@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.hero .hero-img {
+  position: relative;
+  height: 300px;
+  width: 40vw;
+  background-size: cover;
+  margin: 0 30px;
+  background-position: center;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hero .hero-img .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  color: white;
+  text-shadow: 1px 1px 12px black;
+  font-size: 2rem;
+}
+
+.hero .hero-img .hero-text .line {
+  height: 2px;
+  width: 50%;
+  background-color: #fff;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 12px black;
+          box-shadow: 0 0 12px black;
+}
+
+.hero .hero-img .hero-text h2 {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero .circle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: rgba(232, 191, 86, 0.778);
+  display: none;
+}
+
+.hero .circle ion-icon {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.679);
+}
+
+.hero .first-hero {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/49/hand-1076597_1280.jpg);
+}
+
+.hero .second-hero {
+  background-image: url(https://cdn.pixabay.com/photo/2015/05/31/13/45/young-woman-791849_1280.jpg);
+  -webkit-filter: saturate(-100px);
+          filter: saturate(-100px);
+}
+
+.hero .hero-img:hover {
+  -webkit-filter: grayscale(50%) opacity(50%);
+          filter: grayscale(50%) opacity(50%);
+}
+
+.hero .hero-img:hover .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=index.css.map */

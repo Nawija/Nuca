@@ -1,0 +1,74 @@
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 90px;
+    .hero-img{
+        position: relative;
+        height: 300px;
+        width: 40vw;
+        background-size: cover;
+        margin: 0 30px;
+        background-position: center;
+        filter: grayscale(50%);
+        cursor: pointer;
+        transition: 0.2s;
+        .hero-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            color: white;
+            text-shadow: 1px 1px 12px black;
+            font-size: 2rem;
+            .line{
+                height: 2px;
+                width: 50%;
+                background-color: #fff;
+                margin-bottom: 10px;
+                box-shadow: 0 0 12px black;
+            }
+            h2{
+                text-align: center;
+                padding: 10px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+        }
+    }
+    .circle{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: rgba(232, 191, 86, 0.778);
+        display: none;
+        ion-icon{
+            font-size: 4rem;
+            color: rgba(255, 255, 255, 0.679);
+        }
+    }
+    .first-hero{
+        background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/49/hand-1076597_1280.jpg);
+    }
+    .second-hero{
+        background-image: url(https://cdn.pixabay.com/photo/2015/05/31/13/45/young-woman-791849_1280.jpg);
+        filter: saturate(-100px);
+    }
+    .hero-img:hover{
+        filter: grayscale(50%) opacity(50%);
+        .circle{
+            display: flex;
+        }
+    }
+}
