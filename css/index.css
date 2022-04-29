@@ -155,8 +155,7 @@
   height: 150px;
   width: 150px;
   margin: 15px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: #e4e6e3;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
