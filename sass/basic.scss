@@ -25,8 +25,8 @@ nav{
     top: 0;
     z-index: 99;
     background-color: #fff;
-    box-shadow: 0 1px 6px rgb(146, 146, 146);
-    border-bottom: 1px solid rgb(117, 117, 117);
+    box-shadow: 0 1px 16px rgb(161, 161, 161);
+    border-bottom: 1px solid rgb(146, 146, 146);
     a{
         text-decoration: none;
     }
@@ -72,8 +72,38 @@ nav{
         padding: 15px;
         cursor: pointer;
         .search-input{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
-            right: 100px;
+            transform: translateX(150%);
+            right: 10px;
+            margin-top: 21px;
+            transition: transform 0.4s;
+            input[type='search']{
+                padding: 5px;
+                border: 2px solid rgb(82, 179, 87);
+                border-right: none;
+                outline: none;
+                border-radius: 9px 0 0 9px;
+            }
+            .ok-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding:6px;
+                border: 2px solid rgb(82, 179, 87);
+                color: white;
+                text-shadow: 1px 1px 3px black;
+                background: linear-gradient(169deg, rgb(130, 196, 105) 11%, rgb(0, 0, 0) 120%);
+                border-radius: 0 9px 9px 0;
+                border-left: none;
+                cursor: pointer;
+
+            }
+        }
+        .search-input-transform{
+            transform: translateX(0);
         }
     }
 }

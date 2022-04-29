@@ -1,6 +1,6 @@
-const search = document.getElementById('search')
-const searchInput = decodeURI.getElementById('searchInput')
+const searchIcon = document.getElementById('searchIcon')
+let searchInput = document.getElementById('searchInput')
 
-search.onclick = () => {
-    searchInput.classlist.toggle('x')
+searchIcon.onclick = () => {
+    searchInput.classList.toggle('search-input-transform')
 }
