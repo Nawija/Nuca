@@ -97,10 +97,18 @@
     align-items: center;
     justify-content: center;
     .square{
+        position: relative;
         height: 150px;
         width: 150px;
         margin: 15px;
         background-color: rgb(228, 230, 227);
         cursor: pointer;
+        .square-container{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
     }
 }
